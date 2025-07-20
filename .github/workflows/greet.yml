@@ -1,0 +1,15 @@
+name: Friendly Greet Bot 👋
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: echo "🎉 Hello, ckphase! Your push was successful. Keep going!"
